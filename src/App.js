@@ -127,7 +127,7 @@ function App() {
                     className='py-8 md:py-14'
                     initial={{ opacity: 0, y: 50 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    whileInView={{ opacity: 1 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                 >
                     <Hero
