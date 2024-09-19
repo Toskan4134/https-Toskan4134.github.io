@@ -4,6 +4,7 @@ import { Button } from './button';
 import { Sun, Moon, Menu } from 'lucide-react';
 import {
     Sheet,
+    SheetClose,
     SheetContent,
     SheetHeader,
     SheetTitle,
@@ -21,24 +22,15 @@ const Header = ({ theme, setTheme, refs }) => {
         return null;
     }
 
-    function NavLink({ children, onClick, isSideBar = false }) {
-        if (isSideBar) {
-            return (
-                <div onClick={onClick} className='cursor-pointer'>
-                    <p className='text-sm font-medium hover:text-muted-foreground transition-colors'>
-                        {children}
-                    </p>
-                </div>
-            );
-        }
+    function NavLink({ children, onClick }) {
         return (
             <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={onClick}
-                className='cursor-pointer'
+                className='cursor-pointer text-left origin-left'
             >
-                <p className='text-sm font-medium hover:text-primary transition-colors'>
+                <p className='text-sm font-medium transition-colors'>
                     {children}
                 </p>
             </motion.div>
@@ -135,17 +127,18 @@ const Header = ({ theme, setTheme, refs }) => {
                             </SheetHeader>
                             <nav className='flex flex-col space-y-4 mt-4'>
                                 {navItems.map((item) => (
-                                    <NavLink
-                                        key={item.label}
-                                        onClick={() => {
-                                            item.ref?.scrollIntoView({
-                                                behavior: 'smooth',
-                                            });
-                                        }}
-                                        isSideBar
-                                    >
-                                        {item.label}
-                                    </NavLink>
+                                    <SheetClose>
+                                        <NavLink
+                                            key={item.label}
+                                            onClick={() => {
+                                                item.ref?.scrollIntoView({
+                                                    behavior: 'smooth',
+                                                });
+                                            }}
+                                        >
+                                            {item.label}
+                                        </NavLink>
+                                    </SheetClose>
                                 ))}
                             </nav>
                         </SheetContent>
