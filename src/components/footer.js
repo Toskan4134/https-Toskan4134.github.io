@@ -5,6 +5,7 @@ const Footer = () => {
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className='flex flex-col items-center gap-4 px-8 md:gap-2 md:px-0 text-center text-sm leading-loose whitespace-pre-line'
             >
