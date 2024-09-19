@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c1359d13.css",
+    "main.js": "/static/js/main.b60887a0.js",
+    "static/media/YoCartoonWide.png": "/static/media/YoCartoonWide.4227171a3784c4556050.png",
+    "static/media/logob.png": "/static/media/logob.14d1e0c626a773a33715.png",
+    "static/media/logow.png": "/static/media/logow.cc0874f975eed7ace932.png",
+    "index.html": "/index.html",
+    "main.c1359d13.css.map": "/static/css/main.c1359d13.css.map",
+    "main.b60887a0.js.map": "/static/js/main.b60887a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1359d13.css",
+    "static/js/main.b60887a0.js"
+  ]
+}
