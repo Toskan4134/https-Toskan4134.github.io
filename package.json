@@ -2,7 +2,7 @@
     "name": "portfolio",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://Toskan4134.github.io/Toskan4134",
+    "homepage": "https://Toskan4134.github.io/",
     "dependencies": {
         "@radix-ui/react-dialog": "^1.1.1",
         "@radix-ui/react-slot": "^1.1.0",
