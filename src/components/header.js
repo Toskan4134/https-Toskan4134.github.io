@@ -22,13 +22,15 @@ const Header = ({ theme, setTheme, refs }) => {
         return null;
     }
 
-    function NavLink({ children, onClick }) {
+    function NavLink({ children, onClick, isMenu = false }) {
         return (
             <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={onClick}
-                className='cursor-pointer text-left origin-left'
+                className={`cursor-pointer text-left ${
+                    isMenu ? 'origin-left' : 'origin-center'
+                }`}
             >
                 <p className='text-sm font-medium transition-colors'>
                     {children}
@@ -135,6 +137,7 @@ const Header = ({ theme, setTheme, refs }) => {
                                                     behavior: 'smooth',
                                                 });
                                             }}
+                                            isMenu
                                         >
                                             {item.label}
                                         </NavLink>
