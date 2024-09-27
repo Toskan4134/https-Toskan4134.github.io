@@ -7,6 +7,7 @@ const SkillCard = ({ skill, level }) => {
         1: 'Básico',
         2: 'Intermedio',
         3: 'Avanzado',
+        4: 'Experto',
     };
     return (
         <motion.div
@@ -39,6 +40,12 @@ const SkillCard = ({ skill, level }) => {
                             whileHover={{ scale: 1.2 }}
                             className={`w-3 h-3 rounded-full border border-primary ${
                                 level >= 3 ? 'bg-primary' : 'bg-muted'
+                            }`}
+                        ></motion.div>
+                        <motion.div
+                            whileHover={{ scale: 1.2 }}
+                            className={`w-3 h-3 rounded-full border border-primary ${
+                                level >= 4 ? 'bg-primary' : 'bg-muted'
                             }`}
                         ></motion.div>
                     </div>

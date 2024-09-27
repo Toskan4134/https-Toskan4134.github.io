@@ -8,6 +8,7 @@ const Hero = ({
     imageSrc,
     contactRef,
     projectsRef,
+    alt,
 }) => {
     return (
         <div className='flex flex-col-reverse md:flex-row items-center justify-around gap-6'>
@@ -83,7 +84,7 @@ const Hero = ({
                 >
                     <img
                         src={imageSrc}
-                        alt={name}
+                        alt={alt}
                         width={350}
                         height={350}
                         style={{

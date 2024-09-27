@@ -1,12 +1,14 @@
 export const skills = [
-    { name: 'HTML / CSS', level: 3 },
-    { name: 'JavaScript', level: 3 },
+    { name: 'JavaScript', level: 4 },
+    { name: 'HTML', level: 3 },
+    { name: 'CSS', level: 3 },
     { name: 'Node.js', level: 3 },
     { name: 'MongoDB', level: 3 },
-    { name: 'Vue.js / Vuetify', level: 2 },
+    { name: 'Vue.js', level: 2 },
     { name: 'React', level: 2 },
     { name: 'Tailwind', level: 2 },
     { name: 'Java', level: 2 },
+    { name: 'Android Studio', level: 2 },
     { name: 'C#', level: 2 },
     { name: 'ASP.NET', level: 2 },
     { name: 'MySQL / PostgreSQL', level: 2 },
@@ -14,8 +16,11 @@ export const skills = [
     { name: 'Spring Boot', level: 1 },
     { name: 'PHP / Laravel', level: 1 },
     { name: 'Python', level: 1 },
+    { name: 'R', level: 1 },
+    { name: 'Weka', level: 1 },
     { name: 'Azure / AWS (Cloud)', level: 1 },
     { name: 'WordPress', level: 1 },
+    { name: 'Unity', level: 1 },
 ];
 
 export const projects = [

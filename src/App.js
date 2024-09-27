@@ -133,6 +133,7 @@ function App() {
                     <Hero
                         name='Ángel Gaudes Martí'
                         subtitle='Toskan4134'
+                        alt='Toskan'
                         description='Desarrollador Full Stack apasionado por aprender cosas nuevas. Especializado en Node.js y bases de datos MongoDB.'
                         imageSrc={yoCartoon}
                         contactRef={contactRef}
