@@ -59,7 +59,7 @@ const Header = ({ theme, setTheme, refs }) => {
                 >
                     <motion.img
                         src={theme === 'dark' ? logow : logob}
-                        alt='logo'
+                        alt='Toskan'
                         width={32}
                         height={32}
                         whileHover={{ scale: 1.1 }}
