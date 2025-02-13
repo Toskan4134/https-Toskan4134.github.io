@@ -35,15 +35,15 @@ export const projects = [
         image: 'https://i.imgur.com/IHxyTf0.png',
     },
     {
-        title: 'ToskanGPT',
+        title: 'DnD Printable Character Generator',
         description:
-            'Este proyecto es un frontend de una aplicación de Chat que replica la antigua interfaz de ChatGPT, construido con Next.js.',
-        github: 'https://github.com/toskan4134/toskangpt',
+            'Este proyecto es una herramienta para generar fichas y miniaturas de DnD imprimibles',
+        github: 'https://github.com/toskan4134/dnd-printable-character-generator',
         web: {
-            name: 'Demo',
-            url: 'https://codesandbox.io/p/devbox/github/toskan4134/toskangpt',
+            name: 'Ver',
+            url: 'https://toskan4134.github.io/dnd-printable-character-generator/',
         },
-        image: 'https://i.imgur.com/jYKh5jg.png',
+        image: 'https://i.imgur.com/OUHgRXI.png',
     },
     {
         title: "Human's Fate Reborn",
@@ -58,6 +58,15 @@ export const projects = [
 ];
 
 export const experience = [
+    {
+        company: 'Hiberus',
+        position: 'Programador Java Microservicios',
+        period: 'Diciembre 2024 - Actualmente',
+        description: `— Desarrollo de microservicios con Spring Boot y Spring Cloud
+— Creación de tests unitarios con JUnit y Mockito`,
+        website: 'https://hiberus.com',
+        location: 'Zaragoza, España',
+    },
     {
         company: 'Memorándum Multimedia',
         position: 'Programador Full Stack (Becario)',
