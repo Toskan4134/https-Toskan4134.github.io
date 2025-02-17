@@ -55,7 +55,7 @@ const ProjectCard = ({
                             whileTap={{ scale: 0.95 }}
                         >
                             <Button asChild variant='outline' size='sm'>
-                                <Link to={web.url}>
+                                <Link to={web.url} reloadDocument>
                                     <ExternalLink className='mr-2 h-4 w-4' />
                                     {web.name}
                                 </Link>
